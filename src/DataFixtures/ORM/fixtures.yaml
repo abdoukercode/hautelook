@@ -1,0 +1,24 @@
+App\Entity\Person:
+    person1:
+        name: Yoshi
+        realName: T. Yoshisaur Munchakoopas
+        highScore: 99999
+        email: yoshi@nintendo.com
+        tagLine: Yoshi
+        universe: '@universe_nintendo'
+    person{2..10}:
+        name: <bufferName()>
+        realName: <name()>
+        highScore: <numberBetween(100, 99999)>
+        email: <email()>
+        tagLine: 80%? <sentence()>
+        universe: '@universe_*'
+
+
+App\Entity\Universe:
+    universe_nintendo:
+        name: Nintendo
+    universe_sega:
+        name: Sega
+    universe_arcade:
+        name: Classic Arcade
